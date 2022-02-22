@@ -84,7 +84,8 @@ class App extends React.Component{
                 <ContactForm onSubmit={this.saveContact} />
                 <h2>Contacts</h2>
                 <Filter value={filter} onChange={this.changeFilter}/>
-                <ContactList contacts={visibleContacts} onDeleteContact={this.deleteContact}/>
+                <ContactList contacts={visibleContacts} onDeleteContact={this.deleteContact}>
+                </ContactList>
             </div>
         )
     }
